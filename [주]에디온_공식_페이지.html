@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="(주)에디온_공식_페이지"
+content="width=device-width,
+initial-scale=1.0">
+    <meta name="(주)에디온"
+    content="누구나 지원할수 있지만 아무나 일할수 없고, 아무회사나 보내지않는 (주)에디온의 철학">
+    <title>(주)에디온_공식_페이지</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+                                    margin: 0;
+                                    padding: 0;
+                                    text-align: center;
+        }
+
+        에디온.compoant-title {
+            font-size: 40px;
+            font-weight: bold;
+            padding: 30px 0;
+            background-color: white;
+        }
+
+        에디온.compoant-image img {
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .menu-buttons {
+            margin: 20px 0;
+        }
+
+        .menu-buttons button {
+            padding: 12px 25px;
+            margin: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            background-color: rgb(98, 204, 204);
+            color: white;
+            border-radius: 5px;
+        }
+
+        .menu-buttons
+button:hover {
+    background-color: #3b8b7c;
+}
+
+        .content-section {
+            display: none; /*기본은 숨기기*/
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        h2 {
+            border-bottom: 2px
+        solid #ddd;
+            padding-bottom: 5px;
+        }
+
+    </style>
+
+    <script>
+        function
+    showSection(sectionID) {
+        //모든 섹션 숨기기
+        const sections = document.querySelectorAll('.content-section');
+        sections.forEach(sec => sec.style.display = 'none');
+        //선택한 셉션만 보이기
+        document.getElementById(sectionID).style.display = 'block';
+        //클릭 시 페이지 아래로 스크롤
+        window.scrollTo({
+            top:
+            document.getElementById(sectionID).offsetTop - 20,
+            behavior:'smooth' });
+    }
+    </script>
+</head>
+<body>
+    <!--[주]에디온-->
+    <div
+    class="compoant-title">(주)에디온</div>
+
+    <!--회사 이미지-->
+    <div
+    class="compoant-image">
+        <img
+    src="(주)에디온.png" alt="회사이미지"></div>
+
+    <!--메뉴 버튼-->
+    <div class="menu-buttons">
+        <button
+        onclick="showSection('about')">회사 소개</button>
+        <button
+        onclick="showSection('services')">서비스</button>
+        <button
+        onclick="showSection('contact')">연락처</button>
+    </div>
+
+    <!--숨겨진 콘텐츠들-->
+    <div id="about"
+    class="content-section">
+            <h2>회사 소개</h2>
+            <p>면접과 실기까지! 예술가의 꿈을 한번에 해결할수있는 (주)에디온!
+                ■■년 전통! 최다 합격자!
+                최고의 복지!
+
+                누구나 지원할 수 있지만 아무나 일할수 없고,
+                아무회사나 보내지않는 (주)에디온만의 철학</p>
+                
+            <h2>최다 인재 배출!</h2>
+                
+            <h3> 인재 최다 배출!</h3>
+            <p> - (주)에디온은 최첨단 보안 시스템과 기록 분석 분야의 검증된 경력과 출중한 전문 인력 최다 임직원 보유!</p>
+            
+            <h3> 특별 관리 과정</h3>
+            <p> - LV-4 이상 접근 권한을 보유한 보안/감찰 전문가 출신, 심층 기록 분석 베테랑 연구원 출신, 윤리/통제 위원회 밒 신원 미확인 조사 경력의 교관급 인력이 지도하는 핵심 인재 양성 과정 보유!</p>
+
+            <h3> 득정 기술 자격증까지 무료!</h3>
+            <p> - CCTV분석, 로그 파일 및 파일 복원, 시스템 오류 대응 등의 핵심 실무 지식을 료육하며, 관련 특정 기술 자격증 취득까지 전폭적으로 지원!</p>
+
+            <h3> 최고의 강사진!</h3>
+            <p> - 기록 보존, 심층 기록 분석 분야의 메테랑 연구원 출신, 윤리/통제, 비상 통신 경력의 전문가, 현직 대학/국가기관 인지 심리 전무가까지 보안/분석 분야의 검증된 경력과 출중한 전문 인력 회다 강사진 보유!</p>
+
+            <h3> 보안/통제 맞춤 컨설팅</h3>
+            <p> - 'RED HOUR' rlfhr tkrwp alc 'OBS-A' 코드 보고 등 내부 미공식 조사 경험이 있는 전문가들이 개인별 진로를 분석하고, 첨단 보안/통제 분야로의 취업/진출을 위한 맞춤 컨설팅 제공!</p>
+
+        </div>
+
+    <div id="services"
+    class="content-section">
+            <h2>서비스
+                (주)에디온은 4가지 약속을 합니다.</h2>
+            <h3>1. 정보 입수 및 분석</h3>
+            <p> -에디온의 핵심은 정확한 정보 입수와 심층적인 부석 능력!.</p>
+            <h3>2. 맞춤형 교육 진행</h3>
+            <P> -에디온의 핵심은 개개인에 최적화된 교육과 실무 적용 능력!</p>
+            <h3>3. 전문 분야선택</h3>
+            <p> -에디온의 핵심은 개인의 역략에 맞는 전무 분야와 차별화된 경쟁력!</p>
+            <h3>4. 보안/분석 컨설팅</h3>
+            <p> -에디온의 핵심은 최고 수준의 보안/분석 컨설팅과 핵심 인재로의 성장!</p>
+        </div>
+
+        <div id="contact"
+        class="content-section">
+                <h2>연락처</h2>
+                <h3>(주)에디온 공식 문의함</h3>
+                <p> - 이메일 : choenoa0422@gmail.com</p>
+                <p> - 전화번호 : 010-9315-3408</p>
+            </div>
+</body>
+</html>
